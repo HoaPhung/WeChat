@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bg1" />
+
+    <Button
+        android:id="@+id/btn_chatroom"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_corner"
+        android:elevation="15dp"
+        android:text="Chatroom"
+        android:textAllCaps="false"
+        android:textColor="#515151"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_chatroom"
+        android:layout_alignStart="@+id/btn_chatroom"
+        android:layout_alignTop="@+id/btn_chatroom"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/white_corner"
+        android:elevation="15dp"
+        android:text="Create group"
+        android:textAllCaps="false"
+        android:textColor="#515151"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_create"
+        android:layout_alignStart="@+id/btn_create"
+        android:layout_alignTop="@+id/btn_create"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/white_corner"
+        android:elevation="15dp"
+        android:text="Join group"
+        android:textAllCaps="false"
+        android:textColor="#515151"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/name_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_chatroom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Name Device"
+        android:textColor="#2d9cdb"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/name_device"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@mipmap/penguin" />
+
+    <Spinner
+        android:id="@+id/btn_language"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/name_device"
+        android:layout_toRightOf="@+id/name_device" />
+
+
+</RelativeLayout>
